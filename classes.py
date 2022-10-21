@@ -56,7 +56,7 @@ class Supermarket:
                 self.df_random_walks=self.fill_df(active_customer) #fill individual random_walk df of customer
             self.time = self.time + timedelta(minutes=1) #add next minute
         
-        print(self.df_random_walks)
+        #print(self.df_random_walks)
 
 class Customer:
     """description"""
