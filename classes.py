@@ -2,6 +2,7 @@
 class Supermarket:
     import pandas as pd
     from datetime import datetime, time, timedelta
+    from classes import Customer
 
     """description"""
     
@@ -61,8 +62,9 @@ class Supermarket:
 class Customer:
     """description"""
     import random
+    from classes import Supermarket 
 
-    def __init__(self, id_,trans_matrix,probs):
+    def __init__(self, id_,trans_matrix,probs=Supermarket.probs):
         self.id_              = id_
         self.state            = 'entry'
         #self.df_random_walk   = pd.DataFrame()
