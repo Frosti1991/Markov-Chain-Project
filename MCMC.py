@@ -1,6 +1,4 @@
-import classes.py
-import pandas as pd
-from datetime import datetime, time, timedelta
+from classes import Supermarket, Customer
 
 aldi=Supermarket()
 aldi.simulation()
